@@ -1,0 +1,448 @@
+/* About Page Specific Styles */
+
+/* About Hero Section */
+.about-hero-section {
+  background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 50%, #1a472a 100%);
+  color: white;
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/images/koala-pattern.png") repeat;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.about-hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.about-hero-description {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.about-hero-image {
+  text-align: center;
+}
+
+.about-hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Casino Details Section */
+.casino-details-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.casino-details-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1a472a;
+}
+
+.details-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.details-overview {
+  margin-bottom: 3rem;
+}
+
+.details-overview p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.casino-info-table-container {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.casino-info-table-container h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #1a472a;
+  margin-bottom: 2rem;
+}
+
+.casino-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.casino-info-table td {
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: top;
+}
+
+.casino-info-table tr:last-child td {
+  border-bottom: none;
+}
+
+.casino-info-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #1a472a;
+  width: 30%;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.info-value {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Mission Section */
+.mission-section {
+  padding: 4rem 0;
+  background: white;
+}
+
+.mission-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1a472a;
+}
+
+.mission-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-item {
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #28a745;
+}
+
+.mission-item h3 {
+  font-size: 1.4rem;
+  color: #1a472a;
+  margin-bottom: 1rem;
+}
+
+.mission-item p {
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.portfolio-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1a472a;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.portfolio-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #1a472a;
+  font-weight: 600;
+}
+
+.portfolio-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Security Section */
+.security-section {
+  padding: 4rem 0;
+  background: white;
+}
+
+.security-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1a472a;
+}
+
+.security-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.security-text {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.security-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.security-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.security-feature {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.security-feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.security-feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.security-feature h3 {
+  font-size: 1.2rem;
+  color: #1a472a;
+  margin-bottom: 1rem;
+}
+
+.security-feature p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1a472a;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.contact-method {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-method:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.contact-details h3 {
+  color: #1a472a;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.contact-details p {
+  color: #666;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero-description {
+    font-size: 1.1rem;
+  }
+
+  .casino-details-section h2,
+  .mission-section h2,
+  .portfolio-section h2,
+  .security-section h2,
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .casino-info-table-container {
+    padding: 1.5rem;
+  }
+
+  .casino-info-table td {
+    padding: 1rem;
+  }
+
+  .info-label {
+    width: 40%;
+  }
+
+  .portfolio-grid,
+  .security-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-method {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-section {
+    padding: 2rem 0;
+  }
+
+  .casino-info-table td {
+    padding: 0.8rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .info-label {
+    width: 100%;
+    display: block;
+    border-bottom: none;
+    padding-bottom: 0.5rem;
+  }
+
+  .info-value {
+    display: block;
+    padding-top: 0.5rem;
+    border-top: 1px solid #e9ecef;
+  }
+
+  .casino-info-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .casino-info-table td {
+    display: block;
+    width: 100%;
+    border-bottom: none;
+  }
+}
